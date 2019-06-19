@@ -1,0 +1,254 @@
+body{
+    background-color: rgb(28, 129, 212);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12% 1fr;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@font-face{
+    font-family: "Skullwin";
+    src: url("SkullphabetOne.ttf");
+}
+
+@font-face{
+    font-family: "Skulloose";
+    src: url("Skully.ttf");
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row:1/2;
+}
+
+.acceuil{
+    position: absolute;
+    margin-top: 40vmin;
+    margin-left:40vmin;
+    color: rgb(209, 183, 35);
+    font-family: "Skullwin";
+    font-size: 14vmin;
+    text-align: center;
+    animation: acceuil 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-text-stroke: 0.5vmin black;
+}
+
+@keyframes acceuil{
+    0%{
+        color: rgb(209, 183, 35);
+        -webkit-transform: translate(8px, 4px);
+    }
+    15%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(6px, 3px);
+    }
+    30%{
+        color: rgb(255, 2, 2);
+        -webkit-transform: translate(2px, 3px);
+    }
+    45%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(2px, 5px);
+    }
+    60%{
+        color: rgb(209, 183, 35);
+        -webkit-transform: translate(5px, 2px);
+    }
+    85%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(6px, 5px);
+    }
+    100%{
+        color: rgb(255, 2, 2);
+        -webkit-transform: translate(4px, 5px);
+    }
+}
+
+.temps{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1/2;
+    grid-row: 2/3; 
+    color: rgb(209, 183, 35);
+    font-family: "Skullwin";
+    font-size: 4vmin;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: rgb(209, 183, 35);
+    font-family: "Skullwin";
+    font-size: 4vmin;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+.scoreTotal{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color: rgb(209, 183, 35);
+    font-family: "Skullwin";
+    font-size: 4vmin;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+.noire{
+    min-width: 50px;
+    min-height: 50px;
+    background-color: black;
+    border: 2px solid white;
+    /* margin-top: 5%; */
+    border-radius : 50%;
+}
+
+.forme{
+    min-width: 35px;
+    min-height: 35px;
+    border: 2px solid white;
+    /* margin-top: 5%; */
+    border-radius : 50%;
+}
+
+
+.bouttonNoob{
+    height: 10vmin;
+    width: 45vmin;
+    font-size:5vmin;
+    color: rgb(28, 129, 212);
+    background-color: rgb(209, 183, 35);
+    border: 0.3vmin solid black;
+    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+    font-family: "Skullwin";
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+.bouttonHardcore{
+    height: 10vmin;
+    width: 45vmin;
+    font-size:5vmin;
+    color: rgb(28, 129, 212);
+    background-color: rgb(209, 183, 35);
+    border: 0.3vmin solid black;
+    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+    font-family: "Skullwin";
+    animation: boutton 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+.bouttonUltra{
+    height: 10vmin;
+    width: 45vmin;
+    font-size:5vmin;
+    color: rgb(28, 129, 212);
+    background-color: rgb(209, 183, 35);
+    border: 0.3vmin solid black;
+    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+    font-family: "Skullwin";
+    animation: boutton 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+@keyframes boutton{
+    0%{
+        color: rgb(209, 183, 35);
+        -webkit-transform: translate(8px, 4px);
+    }
+    15%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(6px, 3px);
+    }
+    30%{
+        color: rgb(255, 2, 2);
+        -webkit-transform: translate(2px, 3px);
+    }
+    45%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(2px, 5px);
+    }
+    60%{
+        color: rgb(209, 183, 35);
+        -webkit-transform: translate(5px, 2px);
+    }
+    85%{
+        color: rgb(197, 133, 14);
+        -webkit-transform: translate(6px, 5px);
+    }
+    100%{
+        color: rgb(255, 2, 2);
+        -webkit-transform: translate(4px, 5px);
+    }
+}
+
+.loose{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vmin;
+    color:rgb(0, 0, 0);
+    animation: loose 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: "Skulloose";
+    text-align: center;
+    -webkit-text-stroke: 0.1vmin black;
+}
+
+@keyframes loose{
+    from{
+        color:rgb(0, 0, 0);
+        font-size: 7vmin;
+    }
+    to{
+        color:rgb(255, 2, 2);
+        font-size: 9vmin;
+    }
+}
+
+.win{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    color:rgb(226, 230, 19);
+    animation: win 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: "Skullwin";
+    -webkit-text-stroke: 0.2vmin black;
+}
+
+@keyframes win{
+    from{
+        color:rgb(226, 230, 19);
+        font-size: 4vmin;
+    }
+    to{
+        color:rgb(197, 133, 14);
+        font-size: 6vmin;
+    }
+}
