@@ -20,18 +20,28 @@ body{
     src: url("Skully.ttf");
 }
 
+.rainbow{
+    width: 50px;
+    height: 50px;
+    background: -webkit-linear-gradient(top, #ff3232 0%,#ffba30 9%,#b5fc32 18%,#47ff32 26%,#32fc75 35%,#32fcd4 45%,#32fcd4 45%,#32fcd4 45%,#2f8bfc 54%,#2735f9 64%,#9430ff 74%,#f42e8b 83%,#fc2f66 93%,#ff0004 100%);
+    border-radius : 50%;
+    border: 2px solid white;
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     grid-column: 1/4;
     grid-row:1/2;
 }
 
 .acceuil{
-    position: absolute;
-    margin-top: 40vmin;
-    margin-left:40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row:2/3;
     color: rgb(209, 183, 35);
     font-family: "Skullwin";
     font-size: 14vmin;
@@ -126,42 +136,130 @@ body{
     border-radius : 50%;
 }
 
-
-.bouttonNoob{
-    height: 10vmin;
-    width: 45vmin;
-    font-size:5vmin;
-    color: rgb(28, 129, 212);
-    background-color: rgb(209, 183, 35);
-    border: 0.3vmin solid black;
-    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+.bouttonReload{
+    height: 13vmin;
+    width: 60vmin;
+    background-image:url("boutton.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
     font-family: "Skullwin";
-    -webkit-text-stroke: 0.1vmin black;
+    -webkit-text-stroke: 0.1vmin rgb(255, 2, 2);
+    color:black;
+    font-size: 4vmin;
 }
 
-.bouttonHardcore{
-    height: 10vmin;
-    width: 45vmin;
-    font-size:5vmin;
-    color: rgb(28, 129, 212);
-    background-color: rgb(209, 183, 35);
-    border: 0.3vmin solid black;
-    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+.bouttonReload:hover{
+    animation:0.6s reload;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes reload{
+    from{
+        height:13vmin;
+        width:60vmin;
+        font-size:4vmin;
+    }
+    to{
+        height:10vmin;
+        width:50vmin;
+        font-size:3vmin
+    }
+}
+
+
+.bouttonNoob{
+    height: 13vmin;
+    width: 60vmin;
+    background-image:url("bouttonFond.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
     font-family: "Skullwin";
-    animation: boutton 0.8s;
+    -webkit-text-stroke: 0.1vmin red;
+    animation: boutton 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    color:rgb(28, 129, 212);
+    font-size: 4vmin;
+}
+
+.bouttonNoob:hover{
+    height: 13vmin;
+    width: 60vmin;
+    font-size:4vmin;
+    background-image:url("bouttonNoob.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-family: "Skullwin";
+    animation: boutton 0.9s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     -webkit-text-stroke: 0.1vmin black;
 }
 
+.bouttonHardcore{
+    height: 13vmin;
+    width: 60vmin;
+    font-size:4.5vmin;
+    background-image:url("bouttonFond.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-family: "Skullwin";
+    animation: boutton 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 0.1vmin red;
+}
+
+.bouttonHardcore:hover{
+    height: 13vmin;
+    width: 60vmin;
+    font-size:4.5vmin;
+    background-image:url("bouttonHard.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-family: "Skullwin";
+    animation: boutton 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 0.1vmin rgb(0, 0, 0);
+}
+
 .bouttonUltra{
-    height: 10vmin;
-    width: 45vmin;
-    font-size:5vmin;
-    color: rgb(28, 129, 212);
-    background-color: rgb(209, 183, 35);
-    border: 0.3vmin solid black;
-    box-shadow: 0.5vmin 0.5vmin 0 0 black;
+    height: 13vmin;
+    width: 60vmin;
+    font-size:4.5vmin;
+    background-image:url("bouttonFond.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-family: "Skullwin";
+    animation: boutton 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 0.1vmin red;
+}
+
+.bouttonUltra:hover{
+    height: 13vmin;
+    width: 60vmin;
+    font-size:4.5vmin;
+    background-image:url("bouttonUltra.png");
+    background-size: cover;
+    background-position: 50% 46%;
+    background-color: transparent;
+    border: 0px solid transparent;
     font-family: "Skullwin";
     animation: boutton 0.2s;
     animation-direction: alternate;
@@ -206,9 +304,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7vmin;
+    font-size: 10vmin;
     color:rgb(0, 0, 0);
-    animation: loose 0.5s;
+    animation: loose 0.4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     font-family: "Skulloose";
@@ -219,11 +317,11 @@ body{
 @keyframes loose{
     from{
         color:rgb(0, 0, 0);
-        font-size: 7vmin;
+        font-size: 10vmin;
     }
     to{
         color:rgb(255, 2, 2);
-        font-size: 9vmin;
+        font-size: 12vmin;
     }
 }
 
@@ -233,9 +331,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4vmin;
+    font-size: 10vmin;
     color:rgb(226, 230, 19);
-    animation: win 0.5s;
+    animation: win 0.4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     font-family: "Skullwin";
@@ -245,10 +343,10 @@ body{
 @keyframes win{
     from{
         color:rgb(226, 230, 19);
-        font-size: 4vmin;
+        font-size: 10vmin;
     }
     to{
         color:rgb(197, 133, 14);
-        font-size: 6vmin;
+        font-size: 13vmin;
     }
 }
