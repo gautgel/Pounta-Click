@@ -162,6 +162,7 @@ function song(son){
         victory.pause();
         gameOver.pause();
         acceuilAudio.pause();
+        nyanCat.pause();
     }
     else if(son === "victory"){
         dead.pause();
@@ -179,6 +180,7 @@ function song(son){
         ultra.pause();
         victory.pause();
         acceuilAudio.pause();
+        nyanCat.pause();
     }
     else if(son === "rainbow"){
         gameOver.pause();
