@@ -4,7 +4,7 @@ var time = 0;
 
 var interval = null;
 
-var bonusT = ["5","25","38","49","57","67","76","89","98","108","112"];
+var bonusT = ["24","49","67","76","89","112"];
 
 var bonus2 = 0;
 
@@ -67,6 +67,7 @@ var victory = new Audio("son/victory.mp3");
 var gameOver = new Audio("son/gameOver.mp3");
 var acceuilAudio = new Audio("son/acceuil.mp3");
 var nyanCat = new Audio("son/rainbow.mp3");
+var rainbowSound = new Audio("son/rainbowSound.mp3");
 
 acceuilAudio.play();
 
@@ -113,8 +114,9 @@ function rainbow(){
 
     function bonus(){
         (event.target).remove();
-        score += 10;
-        time += 5;
+        rainbowSound.play();
+        score += 5;
+        time += 10;
         nyanCat.pause();
         noob.volume = 1;
         ultra.volume = 1;
@@ -656,7 +658,7 @@ function clique3()
 
     reload();
 
-    time = 101;
+    time = 121;
 
     score = 0;
 

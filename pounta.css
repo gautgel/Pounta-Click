@@ -8,16 +8,17 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    cursor: url("curseur/bone.png"), pointer;
 }
 
 @font-face{
     font-family: "Skullwin";
-    src: url("SkullphabetOne.ttf");
+    src: url("police/SkullphabetOne.ttf");
 }
 
 @font-face{
     font-family: "Skulloose";
-    src: url("Skully.ttf");
+    src: url("police/Skully.ttf");
 }
 
 .rainbow{
@@ -126,6 +127,7 @@ body{
     border: 2px solid white;
     /* margin-top: 5%; */
     border-radius : 50%;
+    cursor: url("curseur/skull.png"), pointer;
 }
 
 .forme{
@@ -139,7 +141,7 @@ body{
 .bouttonReload{
     height: 13vmin;
     width: 60vmin;
-    background-image:url("boutton.png");
+    background-image:url("bouttons/boutton.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -154,6 +156,7 @@ body{
     animation:0.6s reload;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    cursor: url("curseur/skull2.png"), pointer;
 }
 
 @keyframes reload{
@@ -173,7 +176,7 @@ body{
 .bouttonNoob{
     height: 13vmin;
     width: 60vmin;
-    background-image:url("bouttonFond.png");
+    background-image:url("bouttons/bouttonFond.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -191,7 +194,7 @@ body{
     height: 13vmin;
     width: 60vmin;
     font-size:4vmin;
-    background-image:url("bouttonNoob.png");
+    background-image:url("bouttons/bouttonNoob.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -201,13 +204,14 @@ body{
     animation-direction: alternate;
     animation-iteration-count: infinite;
     -webkit-text-stroke: 0.1vmin black;
+    cursor: url("curseur/skull5.png"), pointer;
 }
 
 .bouttonHardcore{
     height: 13vmin;
     width: 60vmin;
     font-size:4.5vmin;
-    background-image:url("bouttonFond.png");
+    background-image:url("bouttons/bouttonFond.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -223,7 +227,7 @@ body{
     height: 13vmin;
     width: 60vmin;
     font-size:4.5vmin;
-    background-image:url("bouttonHard.png");
+    background-image:url("bouttons/bouttonHard.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -233,13 +237,14 @@ body{
     animation-direction: alternate;
     animation-iteration-count: infinite;
     -webkit-text-stroke: 0.1vmin rgb(0, 0, 0);
+    cursor: url("curseur/skull3.png"), pointer;
 }
 
 .bouttonUltra{
     height: 13vmin;
     width: 60vmin;
     font-size:4.5vmin;
-    background-image:url("bouttonFond.png");
+    background-image:url("bouttons/bouttonFond.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -255,7 +260,7 @@ body{
     height: 13vmin;
     width: 60vmin;
     font-size:4.5vmin;
-    background-image:url("bouttonUltra.png");
+    background-image:url("bouttons/bouttonUltra.png");
     background-size: cover;
     background-position: 50% 46%;
     background-color: transparent;
@@ -265,6 +270,7 @@ body{
     animation-direction: alternate;
     animation-iteration-count: infinite;
     -webkit-text-stroke: 0.1vmin black;
+    cursor: url("curseur/skull4.png"), pointer;
 }
 
 @keyframes boutton{
