@@ -82,7 +82,6 @@ function reload(){
     })
 }
 
-
 function rainbow(){
     
     if(score == bonusT[bonus2]){
@@ -303,9 +302,9 @@ function clique()
 
         forme.style.position = "absolute";
         forme.style.top = Math.floor(Math.random()*100) + "%";
-        forme.style.left = Math.floor(Math.random()*100) + "%";
+        forme.style.left = Math.floor(Math.random()*100)+ "%";
 
-        forme.style.width = Math.floor(Math.random()*40)+ "px";
+        forme.style.width = Math.floor(Math.random()*60)+ "px";
         forme.style.height = forme.style.width;
 
         let r = Math.floor(Math.random()*255 + 10);
@@ -319,12 +318,13 @@ function clique()
                 {
                     left:Math.floor(Math.random()*100) + "%",
                     top:Math.floor(Math.random()*100) + "%",
-        }, 4000 , loop)
+        }, 5000 , loop)
         }
 
         loop();
 
         forme.addEventListener("click", detruit);
+
 
         function detruit()
         {
@@ -351,19 +351,19 @@ function clique()
             
                 if(all.length == 0){
                     let all = document.querySelectorAll(".forme, .noire, .rainbow");
-            
+
                     if(all.length != 0){
                         all.forEach(
-                                function(d)
-                                {
+                            function(d)
+                            {
                                 d.remove();
-                                }
-                            )
-                        }
+                            }
+                        )
+                    }
+
+                    song("victory")
 
                     youWin.innerHTML = "You win !!!!";
-
-                    song("victory");
 
                     clearInterval(interval);
 
@@ -371,10 +371,9 @@ function clique()
 
                     yourScore.innerHTML="";
                 
-                    ScoreTotal.innerHTML= "Your total : " + ((score + (time*10)) * 10) + " en " + (60 - time) + " seconde(s)";
+                    ScoreTotal.innerHTML= "Your total : " + ((score + time) * 100) + " en " + (60 - time) + " seconde(s)";
+                    
                 }
-            
-                rainbow();
         }
 
     }
@@ -386,10 +385,10 @@ function clique()
 
         song("gameover");
 
-        youLoose.innerHTML ="You lose !!!!" + "</br>" + "Try Again !!!!";
+        youLoose.innerHTML ="You lose !!!!" + "</br>" + "Try Again !!!";
 
-        temps.innerHTML="";	
-
+        temps.innerHTML="";
+        
         yourScore.innerHTML="";
 
         let formes = document.querySelectorAll(".forme, .noire, .rainbow");

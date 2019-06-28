@@ -125,7 +125,6 @@ body{
     min-height: 50px;
     background-color: black;
     border: 2px solid white;
-    /* margin-top: 5%; */
     border-radius : 50%;
     cursor: url("curseur/skull.png"), pointer;
 }
@@ -134,7 +133,6 @@ body{
     min-width: 35px;
     min-height: 35px;
     border: 2px solid white;
-    /* margin-top: 5%; */
     border-radius : 50%;
 }
 
