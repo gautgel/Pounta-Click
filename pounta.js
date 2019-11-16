@@ -556,19 +556,6 @@ function clique2()
 
             (event.target).remove();
 
-            // let nbrBoules = document.querySelectorAll(".forme, .noire");
-            // function deplacer(e)
-            // {
-            //     e.style.top = Math.floor(Math.random()*100) + "%";
-            //     e.style.left = Math.floor(Math.random()*100) + "%";
-            // }
-            // nbrBoules.forEach(
-            //     function (d)
-            //     {
-            //         deplacer(d);
-            //     }
-            // );
-
                 let all = document.querySelectorAll(".forme");
             
                 if(all.length == 0){
